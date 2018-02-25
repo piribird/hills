@@ -93,6 +93,18 @@
 </div>
 
 
+</div><div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"></div>
+      <div class="modal-body">
+        Hello! Webisfree.com
+      </div>
+      <div class="modal-footer"></div>
+    </div>
+  </div>
+</div>
+
 <!-- Javascript -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -116,6 +128,8 @@
         });
 
         $('.login-form').on('submit', function(e) {
+            $('#myModal').modal("show");
+
 
             $(this).find('input[type="text"], input[type="password"], textarea').each(function(){
                 if( $(this).val() == "" ) {
@@ -128,7 +142,6 @@
             });
 
         });
-
 
     });
 </script>
