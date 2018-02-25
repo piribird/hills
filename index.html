@@ -100,7 +100,38 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 
+<script>
+    $(document).ready(function() {
 
+      /*
+       Fullscreen background
+       */
+        $.backstretch("./img/backgrounds/1.jpg");
+
+      /*
+       Form validation
+       */
+        $('.login-form input[type="text"], .login-form input[type="password"], .login-form textarea').on('focus', function() {
+            $(this).removeClass('input-error');
+        });
+
+        $('.login-form').on('submit', function(e) {
+
+            $(this).find('input[type="text"], input[type="password"], textarea').each(function(){
+                if( $(this).val() == "" ) {
+                    e.preventDefault();
+                    $(this).addClass('input-error');
+                }
+                else {
+                    $(this).removeClass('input-error');
+                }
+            });
+
+        });
+
+
+    });
+</script>
 </body>
 
 </html>
