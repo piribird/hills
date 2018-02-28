@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <title>Bootstrap Login Form Template</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//www.fuelcdn.com/fuelux/3.13.0/css/fuelux.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://use.fontawesome.com/26199436e4.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .navbar-fixed-top {
+            background-color: #4267b2;
+        }
+        .navbar {
+            min-height: 40px;
+        }
+        .navbar-fixed-top h5 {
+            color: white;
+            font-weight: normal;
+            line-height: 20px;
+        }
+
+        .my-bottom-navbar .nav {
+            float:none;
+        }
+        .my-bottom-navbar .nav li {
+            display:inline-block;
+            float:none;
+            vertical-align:middle;
+            width: 24%;
+        }
+        .my-bottom-navbar button, .my-top-navbar button, .sub-nav ul button {
+            background: none;
+            border: 0;
+            outline: none;
+        }
+        .my-bottom-navbar .navbar-nav {
+            margin-top: 2px;
+            margin-bottom: 0;
+        }
+        .my-bottom-navbar {
+            background-color: #f5f5f5;
+        }
+        .my-bottom-navbar button {
+            outline: none;
+            display: inline-block;
+            text-align: center;
+            font-size: 8px;
+            line-height: 12px;
+        }
+        .my-bottom-navbar button i {
+            display: block;
+            font-style: normal;
+            text-align: center;
+            font-size: 24px;
+        }
+        .my-top-navbar > div {
+            float: left;
+            text-align: right;
+            color: white;
+            line-height: 40px;
+        }
+        .my-top-navbar button {
+            outline: none;
+            color: white;
+            display: inline-block;
+            line-height: 30px;
+            vertical-align: bottom;
+        }
+        .my-top-navbar button i {
+            font-size: 20px;
+        }
+        .sub-nav ul {
+            float: left;
+        }
+        .sub-nav > ul li {
+            float: left;
+            outline: none;
+            padding: 5px 15px;
+        }
+        .sub-nav ul li button {
+            padding: 0;
+            font-size: 13px;
+            color: #353535;
+        }
+        .sub-nav {
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: #e7e7e7;
+            width: 100%;
+            height: 40px;
+            padding-right: 10px;
+        }
+        .sub-nav .dropdown button {
+            height: 30px;
+        }
+        .sub-nav .dropdown ul li a {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .sub-nav .dropdown-menu {
+            min-width: 0;
+        }
+        .post-item {
+            margin-left: 5px;
+            border-bottom: 1px solid #e7e7e7;
+            overflow: hidden;
+            position: relative;
+        }
+        .post-item div {
+            float: right;
+        }
+        .post-item div:first-child {
+            float: left;
+        }
+        .post-item div:last-child {
+            min-width: 30px;
+        }
+        .post-item div:not(:last-child) {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .post-item div p {
+            text-align: left;
+            font-size: 13px;
+            margin: 0;
+            line-height: 20px;
+            color: #5D5D5D
+        }
+        .post-item div p:first-child {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top my-top-navbar">
+        <div style="width:10%;padding-left:5px">&nbsp;</div>
+        <div style="width:78%;text-align: center"><h5>5지구 하자 리스트</h5></div>
+        <div style="width:10%;float:right;padding-right:5px">
+            <button type="button">
+                <i class="fa fa-print" aria-hidden="true"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div style="position:relative;padding-top:40px">
+        <div class="sub-nav">
+            <ul class="nav">
+                <li role="presentation" class="active"><button type="button">전체글</button></li>
+                <li role="presentation"><button type="button">내글</button></li>
+            </ul>
+            <div class="dropdown" style="float:right;line-height: 37px">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    전체
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">대기</a></li>
+                    <li><a href="#">진행</a></li>
+                    <li><a href="#">완료</a></li>
+                    <li><a href="#">확인</a></li>
+                    <li><a href="#">반려</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="post-item">
+            <div>
+                <p>1512동 3~4층 계단</p>
+                <p>NO.1 1512-1005 2018.03.01</p>
+            </div>
+            <div></div>
+            <div style="background-color: #EAEAEA">&nbsp;</div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default navbar-fixed-bottom my-bottom-navbar" role="navigation">
+        <ul class="nav navbar-nav">
+            <li>
+                <button type="button" style="line-height: 16px">
+                    <i class="fa fa-search" aria-hidden="true" style="font-size:22px"></i>검색
+                </button>
+            </li>
+            <li>
+                <button type="button" >
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>글쓰기
+                </button>
+            </li>
+            <li>
+                <button type="button">
+                    <i class="fa fa-unlock" aria-hidden="true"></i>비밀번호
+                </button>
+            </li>
+            <li>
+                <button type="button">
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>로그아웃
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Javascript -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script src="//www.fuelcdn.com/fuelux/3.13.0/js/fuelux.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+
+
+        });
+    </script>
+</body>
+
+</html>
